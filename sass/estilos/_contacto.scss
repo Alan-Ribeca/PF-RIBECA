@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+.boton {
+    margin-top: 0.5rem;
+    color: white;
+    background-color: #4e0303c9;
+    border-radius: 13px;
+    width: 38%;
+    border: #a5acab;
+    cursor: pointer;
+}
+
+@media (min-width:601px) and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        .datosDeContacto {
+            text-align: center;
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+
+        .datosDeContacto {
+            overflow: hidden;
+        }
+
+        .boton {
+            width: 80px;
+        }
+    }
+
+}

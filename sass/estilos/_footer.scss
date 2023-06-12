@@ -1,0 +1,84 @@
+.contenedorh2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    hr {
+        margin: 20px;
+        width: 30%;
+        height: 2px;
+    }
+
+    .subiralinicio {
+        font-size: 2rem;
+    }
+
+    .contenedorh2 h2 {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contenedorgeneral {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        padding-left: 58px;
+        line-height: 25px;
+
+        .pago {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+
+            p {
+                padding-left: 70px;
+                grid-area: 1/1/1/5;
+                display: flex;
+                justify-content: start;
+                text-decoration: underline;
+            }
+
+        }
+
+        p {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (min-width:601px) and (max-width: 991px) {
+    .contenedorgeneral {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        p {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedorgeneral {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        p {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+    }
+}

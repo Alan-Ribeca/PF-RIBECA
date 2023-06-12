@@ -1,0 +1,48 @@
+body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1.5s;
+}
+.cajah2 h2 {
+    padding-top: 2rem;
+}
+.row {
+    text-align: center;
+
+    .col {
+        padding: 10px;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .tarjeta:hover {
+            animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+    }
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.conteinerRopa {
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .section-img {
+        overflow: hidden;
+    }
+
+    .cajah2 h2 {
+        font-size: 20px;
+    }
+}

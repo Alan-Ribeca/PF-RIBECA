@@ -68,10 +68,9 @@
     justify-content: space-between;
     flex-wrap: inherit;
   }
-  .alan .navbar-nav {
+  .alan a {
+    padding-top: 0.5rem;
     display: flex;
-  }
-  .alan .navbar-nav a {
     justify-content: center;
   }
 }

@@ -68,6 +68,9 @@
     justify-content: space-between;
     flex-wrap: inherit;
   }
+  .alan a {
+    padding-top: 0.5rem;
+  }
 }
 .contenedorh2 {
   display: flex;

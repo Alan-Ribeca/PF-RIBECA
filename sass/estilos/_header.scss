@@ -1,16 +1,19 @@
 .header {
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530);
 }
+
 @keyframes text-focus-in {
     0% {
-      filter: blur(12px);
-      opacity: 0;
+        filter: blur(12px);
+        opacity: 0;
     }
+
     100% {
-      filter: blur(0px);
-      opacity: 1;
+        filter: blur(0px);
+        opacity: 1;
     }
-  }
+}
+
 @media screen and (min-width: 992px) {
     .navbar .alan {
         display: flex;
@@ -78,10 +81,14 @@
         justify-content: space-between;
         flex-wrap: inherit;
 
-        a {
-            padding-top: 0.5rem;
+        .navbar-nav {
             display: flex;
-            justify-content: center;
+
+            a {
+                justify-content: center;
+            }
         }
+
+
     }
 }
